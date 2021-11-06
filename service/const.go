@@ -10,7 +10,7 @@ const (
 	ConsentEndpoint   = "/consent"
 	AdminUI           = "/admin"
 	DiscoveryEndpoint = "/.well-known/openid-configuration"
-	JwksUriEndpoint   = "/.well-known/openid-configuration/jwks"
+	JwksUriEndpoint   = "/.well-known/jwks.json"
 )
 
 // openID scope
