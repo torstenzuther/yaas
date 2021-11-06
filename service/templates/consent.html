@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consent</title>
+</head>
+<body>
+<div>
+    <div>
+        <span>Scopes:</span>
+        <ul>
+            {{range .Scopes }}
+            <li>{{.}}</li>
+            {{end}}
+        </ul>
+    </div>
+    <form action="/consent" method="post">
+        <input name="accept" type="submit" value="Accept" />
+        <input name="decline" type="submit" value="Decline" />
+        {{ .CsrfField }}
+    </form>
+</div>
+</body>
+</html>
